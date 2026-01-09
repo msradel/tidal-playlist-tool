@@ -1,0 +1,8 @@
+# GitHub Funding Configuration
+# Shows donation options on repository page
+
+# PayPal username
+custom: ['https://paypal.me/msradel', 'https://venmo.com/msradel']
+
+# GitHub Sponsors
+github: [msradel]

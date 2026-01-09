@@ -1,0 +1,12 @@
+# TIDAL Playlist Tool - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core Dependencies
+tidalapi==0.8.10
+requests>=2.31.0
+
+# Optional Dependencies (recommended)
+pyperclip>=1.8.2  # Clipboard support for auth URLs
+
+# Note: tkinter is included with Python on Windows
+# If missing, install via: python -m pip install tk
