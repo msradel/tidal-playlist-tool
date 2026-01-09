@@ -1,0 +1,29 @@
+# AudioArchitect Backend Dependencies
+# Python 3.12+ required
+
+# Web Framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# Music Platform APIs
+tidalapi==0.8.10
+spotipy==2.24.0
+
+# HTTP & Auth
+requests>=2.31.0
+httpx==0.28.1
+
+# Data Processing
+python-dateutil>=2.8.2
+
+# Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# CORS (for desktop app communication)
+python-multipart==0.0.20
+
+# Optional but useful
+pyperclip>=1.8.2

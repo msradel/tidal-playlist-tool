@@ -1,0 +1,44 @@
+{
+  "name": "audioarchitect-desktop",
+  "version": "2.0.0",
+  "description": "AudioArchitect - Build Your Perfect Music Library",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"npm run dev:react\" \"wait-on http://localhost:3000 && electron .\"",
+    "dev:react": "react-scripts start",
+    "build": "react-scripts build",
+    "package": "electron-builder"
+  },
+  "keywords": ["music", "playlist", "tidal", "spotify"],
+  "author": "msradel",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^28.1.0",
+    "axios": "^1.6.5"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.audioarchitect.app",
+    "productName": "AudioArchitect",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "build/**/*",
+      "main.js",
+      "preload.js"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "public/icon.ico"
+    }
+  }
+}
