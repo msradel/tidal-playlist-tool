@@ -1,18 +1,11 @@
-# Tidal Playlist Tool - Git Ignore File
-# Excludes sensitive data and generated files
+# TIDAL Session Tokens (CRITICAL - NEVER COMMIT!)
+.tidal_session*.txt
+*.tidal_session*
 
-# === CRITICAL: TIDAL CREDENTIALS ===
-.tidal-session.json
-.tidal_session_st.txt
-*.tidal
+# User-specific configuration
 config.json
 
-# === USER DATA ===
-exports/
-archive/
-backups/
-
-# === PYTHON ===
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -37,14 +30,13 @@ share/python-wheels/
 *.egg
 PIPFILE.lock
 
-# === VIRTUAL ENVIRONMENTS ===
+# Virtual Environment
 venv/
 ENV/
 env/
-env.bak/
-venv.bak/
+.venv
 
-# === IDE ===
+# IDE
 .vscode/
 .idea/
 *.swp
@@ -52,18 +44,23 @@ venv.bak/
 *~
 .DS_Store
 
-# === LOGS ===
-*.log
-logs/
+# Exports (optional - uncomment if you don't want to track exports)
+# exports/
+# *.json
+# *.csv
+# *.txt
 
-# === TESTING ===
+# Local project paths (update as needed)
+D:/Desktop/Randomizer/
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Testing
 .pytest_cache/
 .coverage
 .tox/
-htmlcov/
-
-# === MISC ===
-*.bak
-*.tmp
-*.temp
-.cache/
+.hypothesis/

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 msradel
+Copyright (c) 2026 Michael Radel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,28 @@ SOFTWARE.
 
 ---
 
-NOTE: This software uses the TIDAL API via the tidalapi library.
-TIDAL's Terms of Service prohibit commercial use of their API.
-This project is intended for personal, non-commercial use only.
-Donations to support development are welcomed but do not grant commercial rights.
+IMPORTANT DISCLAIMER - TIDAL API USAGE
+
+This software uses the TIDAL API via the python-tidal library (tidalapi).
+According to TIDAL's Developer Terms of Service, the TIDAL API is intended
+for NON-COMMERCIAL USE ONLY.
+
+By using this software, you agree to:
+1. Use this tool for PERSONAL, NON-COMMERCIAL purposes only
+2. Comply with TIDAL's Terms of Service: https://tidal.com/terms
+3. Comply with TIDAL's Developer Terms: https://developer.tidal.com/documentation/guidelines/guidelines-developer-terms
+
+PROHIBITED USES:
+- Commercial services or products
+- Reselling or sublicensing
+- Public APIs or SaaS offerings
+- Any use that generates revenue
+
+ALLOWED USES:
+- Personal playlist management
+- Data backup and organization
+- Educational and research purposes
+- Open source development and contributions
+
+The author(s) of this software are not affiliated with TIDAL and assume no
+responsibility for violations of TIDAL's Terms of Service by end users.
